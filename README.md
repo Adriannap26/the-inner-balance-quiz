@@ -15,4 +15,8 @@ Welcome to The Inner Balance Quiz read.me, this quiz was created for milestone p
    3. Provide Personalised Insights 
    - Offer tailored feedback based on quiz responses to guide users toward achieving a more balanced and healthy lifestyle.
 
-   #### User stories
+  #### User stories
+
+    ##### First Time Visitor Goals
+    ##### Returning Visitor Goals
+    ##### Frequent Visitor Goals

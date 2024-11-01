@@ -92,6 +92,7 @@ a {
         font-size: 1em;
         cursor: pointer;
         float: right;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     /* Footer */

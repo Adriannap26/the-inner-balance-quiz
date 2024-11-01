@@ -69,6 +69,7 @@ a {
         font-size: 1.2em;
         border: none;
         background-color: #8cb37d;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         color: white;
         cursor: pointer;
     }

@@ -106,5 +106,6 @@ TBC
 
 ## Credits
 ### Code
-- General coding avice [W3School](https://www.w3schools.com/)
+- General coding advice [W3School](https://www.w3schools.com/)
+- Javascript cheat sheet used to resolve any confusion and extend my knowledge [Javascript cheat sheet](https://hackr.io/blog/javascript-cheat-sheet)
 ## Acknowledgments

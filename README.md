@@ -36,5 +36,30 @@ Welcome to The Inner Balance Quiz read.me, this quiz was created for milestone p
   - [Home hero image](https://www.pexels.com/photo/aerial-view-of-a-cliff-17902495/)
   - [Pexels](https://www.pexels.com/) image has been used for the background.
 
+## Wireframes and Structure
 
-  ## Wireframes and Structure
+### Wireframes
+TBC
+
+## Features
+
+-   #### Responsive on all devices - [view](TBC)
+
+### Header and footer
+- The header includes a big bold name of the Quiz.
+## ![Text](Picture of header TBC)
+- The footer includes a subscribe to our newsletter button and social media details.
+## ![Text](Picture of footer TBC)
+
+### Interactive elements
+ 
+#### Next question button
+- The quiz features a next button which appears once the asnwer has been selected. 
+## ![Text](Picture of button TBC)
+
+## Technologies
+
+### Languages
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) 
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)

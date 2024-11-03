@@ -32,6 +32,9 @@ Welcome to The Inner Balance Quiz read.me, this quiz was created for milestone p
   - Work Sans is used in the quiz section, with Sans Serif as the fallback font. I think that this font contrasts well with the headings as it is delicate and neat. 
 
   ### Imagery
+
+  - [Home hero image](https://www.pexels.com/photo/aerial-view-of-a-cliff-17902495/)
   - [Pexels](https://www.pexels.com/) image has been used for the background.
+
 
   ## Wireframes and Structure

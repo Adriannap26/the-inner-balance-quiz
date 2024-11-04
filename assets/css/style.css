@@ -106,57 +106,6 @@ a {
     background-color: #a0d89b; 
 }
 
-/*
-    .game-container {
-        background-color: rgb(255, 255, 255, 0.8);
-        padding: 20px;
-        margin: 10px;
-        border-radius: 15px;
-        text-align: center;
-        max-width: 700px;
-        width: 100%;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-    }
-
-
-    #answers {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .answer-button {
-        padding: 15px;
-        font-size: 1.2em;
-        border: none;
-        background-color: #8cb37d;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-        color: white;
-        cursor: pointer;
-    }
-
-    .answer-button:hover {
-        background-color: #b9eca5;
-    }
-
-    .answer-button:active {
-        background-color: #65815a;
-    }
-
-    #next-question {
-        padding: 15px;
-        margin: 20px;
-        background:#e4eee1;
-        color: #33462c;
-        border: none;
-        font-weight: 300;
-        width: 160px;
-        font-size: 1em;
-        cursor: pointer;
-        float: right;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    }
-    */
 
     /* Footer */
 

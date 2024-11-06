@@ -1,0 +1,22 @@
+{
+  "name": "the-inner-balance-quiz",
+  "version": "1.0.0",
+  "description": "![website-preview]()",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adriannap26/the-inner-balance-quiz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adriannap26/the-inner-balance-quiz/issues"
+  },
+  "homepage": "https://github.com/Adriannap26/the-inner-balance-quiz#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}

@@ -79,3 +79,29 @@ const questions = [
 const progressBar = document.getElementById('progressBar')
 const question = document.getElementById('question-section')
 const answerButtons = document.getElementById('answers-section')
+//ensures the quiz starts on the first question
+let currentQuestionIndex = 0;
+
+// creates a span element for each question in the quiz to track quiz progress
+function processQuestion (index) {
+    questions.forEach(question => {
+        progressBar.innerHTML += `<span></span>`
+    });
+
+    // Adds seen class to the questions which have been seen to update progress bar
+    let spans = document.querySelectorAll('span');
+    for (let i = 0; i <= index; i++) {
+        spans[i].classList.add('seen');
+    }
+
+    //Generates question
+    question.innerHTML = 
+    `<p>${questions[index].question}</p>`
+
+    //Generates Answer buttons
+    questions[index].answers.forEach(answer => {
+        answerButtons.innerHTML += `<button>${answer}</button>`;
+    })
+}
+
+processQuestion(currentQuestionIndex);

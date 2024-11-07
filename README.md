@@ -74,6 +74,12 @@ TBC
 
 ### Links and Functions
 
+#### Functionality 
+- Create a progress bar, the progress bar is made out of spans. The number of spans depends on the number of questions presented in the questionaire. The function creates a span element in the html file every time is sees a question in the questions section. 
+- The function then highlights all completed questions by adding a class 'seen' to all questions which have been answered. The 'seen' class is marked as a different colour in css therefore it creates a progress bar which shows how many questions the user has gotten through.
+- Questions from the array are inserted into the questions section depending on the index. 
+- Answers from the array are inserted into the questions section depending on the index. 
+
 ### Browser Testing
 
 #### Devices: 

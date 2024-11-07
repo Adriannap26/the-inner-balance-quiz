@@ -75,3 +75,7 @@ const questions = [
         correctAnswer: "Regular stretching",
     },
 ]
+
+const progressBar = document.getElementById('progressBar')
+const question = document.getElementById('question-section')
+const answerButtons = document.getElementById('answers-section')

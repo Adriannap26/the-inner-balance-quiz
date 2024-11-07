@@ -18,8 +18,16 @@ Welcome to The Inner Balance Quiz read.me, this quiz was created for milestone p
 #### User stories
 
 ##### First Time Visitor Goals
+-  I want to quickly understand the purpose of the quiz, so that I know what value it provides and if it’s relevant to me.
+- I want to be able to easily navigate to the quiz and understand how to start, so that I can begin without confusion.
+- I want to feel motivated by the quiz design and topic, so that I am encouraged to participate and finish the quiz.
 ##### Returning Visitor Goals
+-  I want to see any improvements or changes in quiz content, so that I can benefit from new or updated information.
+- I want to see my past scores or performance, so that I can track my improvement over time.
+- I want an easy way to share the quiz with friends or family, so that I can encourage others to try it as well.
 ##### Frequent Visitor 
+- I want to see new or rotating questions, so that each quiz attempt feels fresh and engaging.
+- I want an option to save my quiz results or download a summary, so that I can refer to it for personal development.
     
 ## Design
 ### Colour Scheme

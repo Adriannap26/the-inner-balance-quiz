@@ -50,7 +50,7 @@ Welcome to The Inner Balance Quiz read.me, this quiz was created for milestone p
 
 - Home Page Wireframe Desktop- [view](documentation/wireframes/inner-balance-quiz-desktop.png)
 - Home Page Wireframe Tablet- [view](documentation/wireframes/inner-balance-quiz-ipad.png)
-- Home Page Wireframe Phone- [view](documentation/wireframes/inner-balance-quiz-iphone.png
+- Home Page Wireframe Phone- [view](documentation/wireframes/inner-balance-quiz-iphone.png)
 
 ## Features
 
@@ -63,6 +63,10 @@ Welcome to The Inner Balance Quiz read.me, this quiz was created for milestone p
 ## ![Text](Picture of footer TBC)
 
 ### Interactive elements
+
+#### Answer boxes
+- The quiz features answer boxes which when clicked show if the answer is correct or incorrect. 
+## ![Text](Picture of buttons TBC)
  
 #### Next question button
 - The quiz features a next button which appears once the asnwer has been selected. 
@@ -83,7 +87,21 @@ Welcome to The Inner Balance Quiz read.me, this quiz was created for milestone p
 
 #### Summary
 
+| **First Time Visitor Goals** | **Solution** | **Outcome** |
+| ---| ---| ---|
+|I want to be able to see the purpose of the quiz | I have included a short paragraph to show what the intention behind the quiz is.| Passed
+
+
+| **Returning/ Frequent Visitor Goals** | **Solution** | **Outcome** |
+| ---| ---| ---|
+
 ### Links and Functions
+
+| **Page** | **Testing** | **Outcome** |
+| ---| ---| ---|
+|All| Header links back to the home page| Passed
+|All| Social Media links to relevant platforms| TBC
+|All| All content is responsive| TBC
 
 #### Functionality 
 - Create a progress bar, the progress bar is made out of spans. The number of spans depends on the number of questions presented in the questionaire. The function creates a span element in the html file every time is sees a question in the questions section. 

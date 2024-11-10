@@ -22,6 +22,7 @@ a {
     color: rgb(87, 110, 61);
     text-align: center;
     letter-spacing: 3px;
+    margin: 0;
 }
 
 #purpose {
@@ -30,6 +31,7 @@ a {
     font-size: 1.3em;
     color: rgb(87, 110, 61);
     text-align: center;
+    margin: 0 0 20px 0;
 }
 
 /* Game */

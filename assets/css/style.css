@@ -24,6 +24,14 @@ a {
     letter-spacing: 3px;
 }
 
+#purpose {
+    font-family: "Arima", sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+    color: rgb(87, 110, 61);
+    text-align: center;
+}
+
 /* Game */
 
 .game-section {

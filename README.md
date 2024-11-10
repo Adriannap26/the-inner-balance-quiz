@@ -47,7 +47,10 @@ Welcome to The Inner Balance Quiz read.me, this quiz was created for milestone p
 ## Wireframes and Structure
 
 ### Wireframes
-TBC
+
+- Home Page Wireframe Desktop- [view](documentation/wireframes/inner-balance-quiz-desktop.png)
+- Home Page Wireframe Tablet- [view](documentation/wireframes/inner-balance-quiz-ipad.png)
+- Home Page Wireframe Phone- [view](documentation/wireframes/inner-balance-quiz-iphone.png
 
 ## Features
 

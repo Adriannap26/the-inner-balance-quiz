@@ -3,6 +3,7 @@ const questions = [
         question: "What is an ideal way to reduce stress?",
         answers: ["Mindful breathing", "Skipping meals", "Spending a long time on social media"],
         correctAnswer: "Mindful breathing",
+        elaboration: "Correct, Mindful breathing reduces stress by activating the body's relaxation response, lowering heart rate and blood pressure, and helping to calm the mind."
     }, 
     {
         question: "Which food is considered anti-inflammatory?",
@@ -79,11 +80,14 @@ const questions = [
 const progressBar = document.getElementById('progressBar')
 const question = document.getElementById('question-section')
 const answerButtons = document.getElementById('answers-section')
+const correctAnswerElaboration = document.getElementById('answer-elaboration-section')
+
 //ensures the quiz starts on the first question
 let currentQuestionIndex = 0;
 
 // creates a span element for each question in the quiz to track quiz progress
 function processQuestion (index) {
+    progressBar.innerHTML = "";
     questions.forEach(question => {
         progressBar.innerHTML += `<span></span>`
     });
@@ -99,9 +103,31 @@ function processQuestion (index) {
     `<p>${questions[index].question}</p>`
 
     //Generates Answer buttons
+    answerButtons.innerHTML = "";
     questions[index].answers.forEach(answer => {
         answerButtons.innerHTML += `<button>${answer}</button>`;
     })
+
+    //Event listener shows which answer has been selected
+    let answers = document.querySelectorAll('button');
+    answers.forEach(answer => {
+        //shows text content of selected button
+        answer.addEventListener('click', e => {
+            if (e.target.textContent === questions[index].correctAnswer) {
+                // elaborationSection.innerHTML = `<p>${questions[index].elaboration || 'Correct!'}</p>`;
+                console.log("Correct Answer");
+            } else {
+                //elaborationSection.innerHTML = `<p>Incorrect. Try again!</p>`;
+                console.log("Incorrect Answer");
+            };
+            if (currentQuestionIndex === questions.length - 1) {
+                currentQuestionIndex = 0;
+            } else {
+                currentQuestionIndex ++;
+            }
+            processQuestion(currentQuestionIndex);
+        });
+    });
 }
 
 processQuestion(currentQuestionIndex);

@@ -103,11 +103,7 @@ const correctAnswerElaboration = document.getElementById('answer-elaboration-sec
 //ensures the quiz starts on the first question
 let currentQuestionIndex = 0;
 
-
-//Show quiz page when the start button is clicked- TBC DOESNT WORK
-//ERROR- thinks start button is an option answer and comes up with incorrect error alert
-//This is suppsed to hide the start page and show the quiz page
-
+//Start button takes you to the quiz page as it is clicked
 function showQuizPage () {
     startPage.style.display = 'none';
     quizPage.style.display = 'block';
@@ -136,11 +132,11 @@ function processQuestion (index) {
     //Generates Answer buttons
     answerButtons.innerHTML = "";
     questions[index].answers.forEach(answer => {
-        answerButtons.innerHTML += `<button>${answer}</button>`;
+        answerButtons.innerHTML += `<button class="quiz-answer">${answer}</button>`;
     })
 
     //Event listener shows which answer has been selected
-    let answers = document.querySelectorAll('button');
+    let answers = document.querySelectorAll(".quiz-answer");
     answers.forEach(answer => {
         //shows text content of selected button
         answer.addEventListener('click', e => {

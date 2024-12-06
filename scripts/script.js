@@ -92,6 +92,9 @@ const questions = [
     },
 ]
 
+const startButton = document.getElementById('start-btn')
+const startPage = document.getElementById('start-page')
+const quizPage = document.getElementById('quiz-page')
 const progressBar = document.getElementById('progressBar')
 const question = document.getElementById('question-section')
 const answerButtons = document.getElementById('answers-section')
@@ -99,6 +102,19 @@ const correctAnswerElaboration = document.getElementById('answer-elaboration-sec
 
 //ensures the quiz starts on the first question
 let currentQuestionIndex = 0;
+
+
+//Show quiz page when the start button is clicked- TBC DOESNT WORK
+//ERROR- thinks start button is an option answer and comes up with incorrect error alert
+//This is suppsed to hide the start page and show the quiz page
+
+function showQuizPage () {
+    startPage.style.display = 'none';
+    quizPage.style.display = 'block';
+    processQuestion(currentQuestionIndex);
+}
+
+startButton.addEventListener('click', showQuizPage);
 
 // creates a span element for each question in the quiz to track quiz progress
 function processQuestion (index) {

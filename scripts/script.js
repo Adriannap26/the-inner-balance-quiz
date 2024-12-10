@@ -112,6 +112,13 @@ startButton.addEventListener('click', () => {
     showQuestion(currentQuestionIndex);
 });
 
+// Display current question and answers
+function showQuestion(index) {
+    //Reset progress bar
+    progressBar.innerHTML = questions.map((_,i) => `<span class="${i <= index ? 'seen' : ''}"></span>`).join('');
+    console.log('Generated HTML:', progressBar.innerHTML);
+}
+
 /*
 //Start button takes you to the quiz page as it is clicked
 function showQuizPage () {

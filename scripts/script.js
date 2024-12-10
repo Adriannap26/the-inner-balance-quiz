@@ -92,17 +92,27 @@ const questions = [
     },
 ]
 
-const startButton = document.getElementById('start-btn')
-const startPage = document.getElementById('start-page')
-const quizPage = document.getElementById('quiz-page')
-const progressBar = document.getElementById('progressBar')
-const question = document.getElementById('question-section')
-const answerButtons = document.getElementById('answers-section')
-const correctAnswerElaboration = document.getElementById('answer-elaboration-section')
+// DOM Elements
+const startButton = document.getElementById('start-btn');
+const startPage = document.getElementById('start-page');
+const quizPage = document.getElementById('quiz-page');
+const progressBar = document.getElementById('progressBar');
+const questionSection = document.getElementById('question-section');
+const answerButtons = document.getElementById('answers-section');
+const answerElaboration = document.getElementById('answer-elaboration-section');
 
 //ensures the quiz starts on the first question
 let currentQuestionIndex = 0;
 
+//Start Quiz
+startButton.addEventListener('click', () => {
+    console.log("Start button clicked");
+    startPage.style.display = 'none';
+    quizPage.style.display = 'block';
+    showQuestion(currentQuestionIndex);
+});
+
+/*
 //Start button takes you to the quiz page as it is clicked
 function showQuizPage () {
     startPage.style.display = 'none';
@@ -157,3 +167,5 @@ function processQuestion (index) {
 }
 
 processQuestion(currentQuestionIndex);
+
+*/

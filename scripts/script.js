@@ -117,6 +117,23 @@ function showQuestion(index) {
     //Reset progress bar
     progressBar.innerHTML = questions.map((_,i) => `<span class="${i <= index ? 'seen' : ''}"></span>`).join('');
     console.log('Generated HTML:', progressBar.innerHTML);
+
+     //Display question
+     questionSection.innerHTML = `<p>${questions[index].question}</p>`
+     console.log("question pop up");
+
+     //Display Answer
+     answerButtons.innerHTML = "";
+     questions[index].answers.forEach(answer => {
+        console.log(`Creating button for answer: ${answer}`);
+        const button = document.createElement('button');
+        button.classList.add('quiz-answer');
+        button.textContent = answer;
+        button.addEventListener('click', () => handleAnswer(index, answer));
+        console.log(`Button clicked for answer: ${answer}`);
+        answerButtons.appendChild(button);
+        console.log(`Button added to DOM: ${answer}`);
+     });
 }
 
 /*

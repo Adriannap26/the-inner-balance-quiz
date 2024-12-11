@@ -3,7 +3,7 @@ const questions = [
         question: "What is an ideal way to reduce stress?",
         answers: ["Mindful breathing", "Skipping meals", "Spending a long time on social media"],
         correctAnswer: "Mindful breathing",
-        elaboration: "Correct, Mindful breathing reduces stress by activating the body's relaxation response, lowering heart rate and blood pressure, and helping to calm the mind."
+        elaboration: "Mindful breathing reduces stress by activating the body's relaxation response, lowering heart rate and blood pressure, and helping to calm the mind."
     }, 
     {
         question: "Which food is considered anti-inflammatory?",
@@ -127,13 +127,23 @@ function showQuestion(index) {
      questions[index].answers.forEach(answer => {
         console.log(`Creating button for answer: ${answer}`);
         const button = document.createElement('button');
-        button.classList.add('quiz-answer');
+        button.classList.add('quiz-answer'); //Added for CSS purposes
         button.textContent = answer;
         button.addEventListener('click', () => handleAnswer(index, answer));
         console.log(`Button clicked for answer: ${answer}`);
         answerButtons.appendChild(button);
         console.log(`Button added to DOM: ${answer}`);
      });
+}
+
+//Handle answer function, reacts to the users answer
+function handleAnswer(index, selectedAnswer) {
+    const question = questions[index];
+    if (selectedAnswer === question.correctAnswer) {
+        answerElaboration.innerHTML = `<p class="correct">Correct! ${question.elaboration}</p>`
+        } else {
+            answerElaboration.innerHTML = `<p class="incorrect">Good try, however this is the incorrect answer. ${question.elaboration}</p>`
+        }
 }
 
 /*

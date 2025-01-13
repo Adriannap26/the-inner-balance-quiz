@@ -112,6 +112,8 @@ startButton.addEventListener('click', () => {
     showQuestion(currentQuestionIndex);
 });
 
+let results = [];
+
 // Display current question and answers
 function showQuestion(index) {
     //Reset progress bar

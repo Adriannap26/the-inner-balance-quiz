@@ -141,10 +141,41 @@ function showQuestion(index) {
 //Handle answer function, reacts to the users answer
 function handleAnswer(index, selectedAnswer) {
     const question = questions[index];
-    if (selectedAnswer === question.correctAnswer) {
+    const isCorrect = selectedAnswer === question.correctAnswer;
+
+    results.push ({
+        question: question.question,
+        selectedAnswer: selectedAnswer,
+        correctAnswer: question.correctAnswer,
+        isCorrect: isCorrect
+    });
+
+    answerElaboration.innerHTML = `<p class="${isCorrect ? 'correct' : 'incorrect'}">${isCorrect 
+        ? "Correct!" : "Good try, however this is the incorrect answer."} ${question.elaboration}</p>`;
+
+    /*if (selectedAnswer === question.correctAnswer) {
         answerElaboration.innerHTML = `<p class="correct">Correct! ${question.elaboration}</p>`
         } else {
             answerElaboration.innerHTML = `<p class="incorrect">Good try, however this is the incorrect answer. ${question.elaboration}</p>`
-        }
+        } */
+
+            //TBC This doesn't work as it should as the elaboration is still there for previous question on new question
+            //DEBUG!
+
+
+    setTimeout(() => {
+        if (index + 1 < questions.length) {
+                showQuestion(index + 1);
+            } else {
+                showEndPage();
+            }
+        }, 2000);
+    
+    function showEndPage() {
+        quizPage.style.display = 'none';
+        const endPage = document.getElementById('end-page');
+        endPage.style.display = 'block';
+        
 }
 
+// Insert take me to the next question into function. TBC 

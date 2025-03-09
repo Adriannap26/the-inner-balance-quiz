@@ -125,8 +125,11 @@ function showQuestion(index) {
      questionSection.innerHTML = `<p>${questions[index].question}</p>`
      console.log("question pop up");
 
-     //Display Answer
+     //clear elaboration from previous question
      answerButtons.innerHTML = "";
+     answerElaboration.innerHTML = "";
+
+     //Display Answers
      questions[index].answers.forEach(answer => {
         console.log(`Creating button for answer: ${answer}`);
         const button = document.createElement('button');
@@ -170,7 +173,7 @@ function handleAnswer(index, selectedAnswer) {
 
             //TBC This doesn't work as it should as the elaboration is still there for previous question on new question
             //DEBUG!
-}
+
     
     function showEndPage() {
         quizPage.style.display = 'none';

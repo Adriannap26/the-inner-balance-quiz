@@ -13,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Heading */
 
 #heading h1 {

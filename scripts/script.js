@@ -100,6 +100,7 @@ const progressBar = document.getElementById('progressBar');
 const questionSection = document.getElementById('question-section');
 const answerButtons = document.getElementById('answers-section');
 const answerElaboration = document.getElementById('answer-elaboration-section');
+const nextButton = document.getElementById('next-btn');
 
 //ensures the quiz starts on the first question
 let currentQuestionIndex = 0;
@@ -138,7 +139,7 @@ function showQuestion(index) {
      });
 }
 
-//Handle answer function, reacts to the users answer
+//Handle answer function
 function handleAnswer(index, selectedAnswer) {
     const question = questions[index];
     const isCorrect = selectedAnswer === question.correctAnswer;
@@ -153,6 +154,14 @@ function handleAnswer(index, selectedAnswer) {
     answerElaboration.innerHTML = `<p class="${isCorrect ? 'correct' : 'incorrect'}">${isCorrect 
         ? "Correct!" : "Good try, however this is the incorrect answer."} ${question.elaboration}</p>`;
 
+    //show next button
+    nextButton.classList.remove('hide');
+    //disable answer buttons        
+    document.querySelectorAll('.quiz-answer').forEach(button => button.disabled = true);
+}
+
+    
+
     /*if (selectedAnswer === question.correctAnswer) {
         answerElaboration.innerHTML = `<p class="correct">Correct! ${question.elaboration}</p>`
         } else {
@@ -161,15 +170,7 @@ function handleAnswer(index, selectedAnswer) {
 
             //TBC This doesn't work as it should as the elaboration is still there for previous question on new question
             //DEBUG!
-
-
-    setTimeout(() => {
-        if (index + 1 < questions.length) {
-                showQuestion(index + 1);
-            } else {
-                showEndPage();
-            }
-        }, 2000);
+}
     
     function showEndPage() {
         quizPage.style.display = 'none';

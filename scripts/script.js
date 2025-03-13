@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {    
+/*document.addEventListener('DOMContentLoaded', () => { */
     const questions = [
         {
             question: "What is an ideal way to reduce stress?",
@@ -114,12 +114,15 @@ document.addEventListener('DOMContentLoaded', () => {
         showQuestion(0);
     }
 
-    /*startButton.addEventListener('click', () => {
+    startButton.addEventListener('click', () => {
         console.log("Start button clicked");
         startPage.style.display = 'none';
-        quizPage.style.display = 'block';
+        quizPage.style.display = 'flex';
+        setTimeout(() =>
+        {quizPage.style.opacity = 1;
+        }, 100);
         showQuestion(currentQuestionIndex);
-    });*/
+    });
 
     let results = [];
 
@@ -177,5 +180,5 @@ document.addEventListener('DOMContentLoaded', () => {
         const endPage = document.getElementById('end-page');
         endPage.style.display = 'block';
     }
-});
+
    

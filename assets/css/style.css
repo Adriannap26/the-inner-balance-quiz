@@ -85,16 +85,24 @@ a {
 
 /* Game */
 
+#quiz-page {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
 .game-section {
-    height: 500px;
+    height: 100vh;
     width: 100%;
     display: flex;
+    visibility: hidden;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: url('../images/background-3.png');
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .game-wrapper {

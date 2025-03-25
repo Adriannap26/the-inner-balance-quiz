@@ -1,4 +1,4 @@
-/*document.addEventListener('DOMContentLoaded', () => { */
+console.log("Script loaded");
     const questions = [
         {
             question: "What is an ideal way to reduce stress?",
@@ -109,8 +109,10 @@
     //Start Quiz
     function startQuiz() {
         console.log("Quiz started");
-        document.getElementById('start-page').style.display = 'none';   
-        document.getElementById('quiz-page').style.display = 'block';
+        startPage.style.display = 'none';
+        quizPage.style.display = 'flex';
+        quizPage.style.visibility = 'visible';
+        quizPage.style.opacity = 1;
         showQuestion(0);
     }
 
@@ -172,7 +174,7 @@
             ? "Correct!" : "Good try, however this is the incorrect answer."} ${question.elaboration}</p>`;
 
         //show next button
-        nextButton.classList.remove('hide');
+        nextButton.classList.remove('hidden');
     }
 
     function showEndPage() {
